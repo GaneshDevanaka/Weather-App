@@ -1,6 +1,8 @@
 .weather {
   place-self: center;
   padding: 40px;
+  margin-left: 20%;
+  width: 60%;
   border-radius: 10px;
   background-image: linear-gradient(45deg, #d4dbeb, #207d09);
   display: flex;
@@ -68,4 +70,22 @@
 .weather-data .col img {
   width: 26px;
   margin-top: 10px;
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .weather {
+    margin-left: 10%;
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .weather {
+    margin-left: 5%;
+    width: 90%;
+    padding: 15px;
+  }
 }
